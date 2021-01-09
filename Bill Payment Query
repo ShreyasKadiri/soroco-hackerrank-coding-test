@@ -1,0 +1,2 @@
+#MYSQL Solution
+select c.NAME from CUSTOMERS c,INVOICES i where c.ID=i.CUSTOMER_ID and i.VALUE in (select max(VALUE) from INVOICES);
